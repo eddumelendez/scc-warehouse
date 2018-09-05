@@ -15,21 +15,21 @@ Contract.make {
         }
         body(products: [
                 [
-                        id    : 1,
+                        id    : $(regex('[0-9]{1,10}')),
                         name  : "Hulk Pop",
                         sku   : "FU32690",
                         status: "Coming in September 2018",
                         price : "\$ 10.99"
                 ],
                 [
-                        id    : 2,
+                        id    : $(regex('[0-9]{1,10}')),
                         name  : "Groot with Stormbreaker Pop",
                         sku   : "FU35773",
                         status: "Coming in December 2018",
                         price : "\$ 10.99"
                 ],
                 [
-                        id    : 3,
+                        id    : $(regex('[0-9]{1,10}')),
                         name  : "Bucky with weapon",
                         sku   : "FU35775",
                         status: "Coming in December 2018",
