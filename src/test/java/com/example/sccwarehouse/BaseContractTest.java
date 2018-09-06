@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
@@ -14,7 +14,7 @@ import static org.mockito.Mockito.mock;
  */
 public class BaseContractTest {
 
-	@Before
+	@BeforeEach
 	public void setup() {
 		List<ProductResponse> products = Arrays.asList(
 				new ProductResponse(1L, "Hulk Pop", "FU32690", "Coming in September 2018", "$ 10.99"),
